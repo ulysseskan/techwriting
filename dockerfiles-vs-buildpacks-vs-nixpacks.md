@@ -19,7 +19,7 @@ Dockerfiles provide a simple language for describing images.  They’re good if 
 <p align="center">
   <img src="https://github.com/ulysseskan/techwriting/assets/71786368/ca25ffe4-2c00-4831-94ae-be561af8eae6" />
   <br>
-  Building an image using a Dockerfile, as drawn by [Ivan Velichko](https://iximiuz.com/en/posts/you-need-containers-to-build-an-image/)
+  Building an image using a Dockerfile, as drawn by <a href="https://iximiuz.com/en/posts/you-need-containers-to-build-an-image/">Ivan Velichko</a>
 </p>
 
 
@@ -50,7 +50,7 @@ All the tips and tricks that you need to know in order to write production grade
 <p align="center">
   <img src="https://github.com/ulysseskan/techwriting/assets/71786368/d9d2d20b-ed1e-4ded-9293-0d62c00eb2ec" />
   <br>
-How buildpacks work, from [https://buildpacks.io/docs/concepts/](https://buildpacks.io/docs/concepts/)
+How buildpacks work, from <a href="https://buildpacks.io/docs/concepts/](https://buildpacks.io/docs/concepts/">buildpacks.io</a>
 </p>
 
 
@@ -103,7 +103,7 @@ Nixpacks make it trivial to build working OCI compliant images that can be run o
 <p align="center">
   <img src="https://github.com/ulysseskan/techwriting/assets/71786368/416d04ad-38d0-459f-93d8-7947c16c232e" />
   <br>
-How Nixpacks works: Detect language > Plan > Generate Dockerfile > Build, as drawn by [Romaric Philogène](https://www.qovery.com/blog/my-feedback-about-nixpacks-an-alternative-to-buildpacks)
+How Nixpacks works: Detect language > Plan > Generate Dockerfile > Build, as drawn by <a href="https://www.qovery.com/blog/my-feedback-about-nixpacks-an-alternative-to-buildpacks">Romaric Philogène</a>
 </p>
 
 Nixpacks is both simpler and more transparent than buildpacks.  You can audit the plan it creates before you build:
@@ -309,22 +309,17 @@ You can build images without Docker/Dockerfiles, using:
 ## References
 
 Nixpacks takes a source directory and produces an OCI compliant image
-
 [https://news.ycombinator.com/item?id=32501448](https://news.ycombinator.com/item?id=32501448)
 
 My Feedback about Nixpacks - an alternative to Buildpacks by Romaric Philogène
-
 [https://www.qovery.com/blog/my-feedback-about-nixpacks-an-alternative-to-buildpacks](https://www.qovery.com/blog/my-feedback-about-nixpacks-an-alternative-to-buildpacks)
 
 Buildpacks vs. Dockerfiles by Genevieve L'Esperance
-
 [https://technology.doximity.com/articles/buildpacks-vs-dockerfiles](https://technology.doximity.com/articles/buildpacks-vs-dockerfiles)
 
 Defence Against the Docker Arts by Joe Kutner (Heroku)
-
 [https://www.youtube.com/watch?v=ofH9_sE2qy0](https://www.youtube.com/watch?v=ofH9_sE2qy0)
 
 How Docker Build Command Works Internally by Ivan Velichko
-
 [https://iximiuz.com/en/posts/you-need-containers-to-build-an-image/](https://iximiuz.com/en/posts/you-need-containers-to-build-an-image/)
 
