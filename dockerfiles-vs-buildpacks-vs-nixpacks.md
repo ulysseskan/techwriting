@@ -17,7 +17,7 @@ This article explores the differences between modern app packaging tools: Docker
 Dockerfiles provide a simple language for describing images.  They’re good if you’re an operator or platform implementer.  You can create base images for your organization.  You can easily run your own tests on the image locally before uploading.  And they provide a level of transparency.
 
 <p align="center">
-  <img src="https://github.com/ulysseskan/testrepo/assets/71786368/fe85f054-ac1b-42f2-9634-9d84cfb8485c" />
+  <img src="https://github.com/ulysseskan/techwriting/assets/71786368/ca25ffe4-2c00-4831-94ae-be561af8eae6" />
   <br>
   Building an image using a Dockerfile, as drawn by [Ivan Velichko](https://iximiuz.com/en/posts/you-need-containers-to-build-an-image/)
 </p>
@@ -27,14 +27,14 @@ Dockerfiles appear trivial and usually start trivial, but don't remain trivial f
 
 
 <p align="center">
-  <img src="https://github.com/ulysseskan/testrepo/assets/71786368/3270f007-ce1b-44fa-8163-3d479ecf994d" />
+  <img src="https://github.com/ulysseskan/techwriting/assets/71786368/85f40336-1f36-4f5d-8d8b-099eba854fa5" />
   <br>
   Two Dockerfiles - the one on the right is more efficient
 </p>
 
 
 <p align="center">
-  <img src="https://github.com/ulysseskan/testrepo/assets/71786368/45643db6-07d1-4d93-be87-f1d037b47dad" />
+  <img src="https://github.com/ulysseskan/techwriting/assets/71786368/57bdbcc1-0f0b-4f65-9582-ad4caba04f24" />
   <br>
 Building the app with the improved Dockerfile took 8.3 seconds (vs. 50.2 seconds for the original one, not shown)
 </p>
@@ -47,9 +47,8 @@ Building the app with the improved Dockerfile took 8.3 seconds (vs. 50.2 seconds
 All the tips and tricks that you need to know in order to write production grade Dockerfiles are given for free in a buildpack. You don't need to think about the efficient ordering and contents of layers, the buildpack does it. You don't need to worry about mystery dependencies arriving via `wget`, buildpacks control what dials out to the outside world. Build churn is dropped to the minimum necessary changes, rather than the minimum possible changes. Disk space and network traffic is saved because far more layers are identical.  Buildpacks provide a framework to ensure your fleet of containers use compliant images, plus an easy way to patch vulnerabilities without needing to involve the dev team.  
 
 
-
 <p align="center">
-  <img src="https://github.com/ulysseskan/testrepo/assets/71786368/c50e481b-0be1-4f48-8665-be944594eb57" />
+  <img src="https://github.com/ulysseskan/techwriting/assets/71786368/d9d2d20b-ed1e-4ded-9293-0d62c00eb2ec" />
   <br>
 How buildpacks work, from [https://buildpacks.io/docs/concepts/](https://buildpacks.io/docs/concepts/)
 </p>
@@ -101,9 +100,8 @@ Nixpacks make it trivial to build working OCI compliant images that can be run o
 * Can spit out a **[plan](https://nixpacks.com/docs/how-it-works#plan)**, which, when run again, will assure that build artifacts are exactly the same every time it's run against that plan.  The result is that any code built with Nixpacks has all its dependencies snapshotted so it won't break over time.  
     * This means that any time someone comes to Railway and deploys a template, it won’t be broken.
 
-
 <p align="center">
-  <img src="https://github.com/ulysseskan/testrepo/assets/71786368/da41cae3-7c9d-45c3-96b6-e13beb318d57" />
+  <img src="https://github.com/ulysseskan/techwriting/assets/71786368/416d04ad-38d0-459f-93d8-7947c16c232e" />
   <br>
 How Nixpacks works: Detect language > Plan > Generate Dockerfile > Build, as drawn by [Romaric Philogène](https://www.qovery.com/blog/my-feedback-about-nixpacks-an-alternative-to-buildpacks)
 </p>
@@ -111,13 +109,13 @@ How Nixpacks works: Detect language > Plan > Generate Dockerfile > Build, as dra
 Nixpacks is both simpler and more transparent than buildpacks.  You can audit the plan it creates before you build:
 
 <p align="center">
-  <img src="https://github.com/ulysseskan/testrepo/assets/71786368/3d5621fa-e871-417c-bec0-54931bda8629" />
+  <img src="https://github.com/ulysseskan/techwriting/assets/71786368/f266b63a-11f0-439d-ab3e-1bd5060f1190" />
   <br>
 Auditing the nixpacks plan
 </p>
 
 <p align="center">
-  <img src="https://github.com/ulysseskan/testrepo/assets/71786368/d7ca1988-cf14-4fc3-856d-a1233c8c7267" />
+  <img src="https://github.com/ulysseskan/techwriting/assets/71786368/dafb321a-b101-4d9a-ab5e-d3f158fb02c8" />
   <br>
 Building the same app with Nixpacks took 38.3 seconds (subsequent builds were shorter)
 </p>
